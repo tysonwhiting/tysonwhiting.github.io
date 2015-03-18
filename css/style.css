@@ -1,0 +1,265 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+/*FULL PAGE (CONTAINER) STYLES*/
+.container{
+  background-color: #FFF;
+}
+
+body{
+  font-size: 24px;
+  font-family: 'Abel', sans-serif;
+}
+
+p{  
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 28em;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.button{
+  display: inline-block;
+  background-color: #a4d29e;
+  text-decoration: none;
+  color: white;
+  border-radius: 3px;
+  font-family: 'Abel', sans-serif;
+  padding: 5px 10px 5px 10px;
+  font-size: 90%;
+  text-transform: uppercase;
+}
+
+.button:hover{
+  background-color: #b29ed2;
+  
+}
+
+.section:before,
+.section:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.section:after {
+    clear: both;
+}
+
+
+
+
+/*======BUGS BUGS BUGS=========*/
+
+.animal{
+    background-image: url(../images/fly.png);
+    background-size: cover;
+    width: 60px;
+    height: 40px;
+    position: fixed;
+    -webkit-transition: all 100ms ease-in-out;
+    /*box-shadow: 0px 0px 20px #e5e5e5;*/
+}
+
+
+/*=================================*/
+
+
+
+/*NAV STYLES*/
+
+.navicon{
+  padding: 15px;
+  float:  left;
+  width: 100px;
+  position: fixed;
+  z-index: 100000000000000000000000000000;
+}
+
+
+
+
+
+
+
+/*COVER PAGE SECTION STYLES*/
+
+.cover {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: #000  url("../images/CV-CoverImg.jpg") no-repeat center top;
+  background-size: cover;
+  align-itmes: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*.covertext-mobile{
+  padding-top: 60px;
+  width:80%;
+    display: block;
+    margin: 0 auto;
+}*/
+
+.covertext{
+  padding-top: 60px;
+  width:90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.coverpar{
+  width:500px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+
+
+
+
+
+
+
+/*CHARACTERS & CHARACTER SHEETS SECTION STYLES*/
+
+.yearbookphoto{
+  margin: 0;
+  height: 600px;
+  float: right;
+}
+
+.chartext{
+  width: 100%;
+  padding: 0px 10px;
+}
+
+.charchunk{
+  padding: 30px 10px;
+}
+
+.charcover{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: #000  url("../images/CV-vampire.png") no-repeat center top;
+  background-size: cover;
+  align-itmes: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+/*MAP SECTION STYLES*/
+
+.map{
+  width: 100%;
+  margin: 0;
+  float: left;
+}
+
+.worldtext{
+  width: 95%;
+  padding: 0px 10px;
+}
+
+.mapchunk{
+  padding: 30px 10px;
+}
+
+
+
+
+/*RULES SECTION STYLES*/
+.ruletext{
+  width: 80%;
+  height: auto;
+
+}
+
+.ruleschunk{
+  margin-top: -30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+
+
+
+
+/*THE FOOTER STYLES*/
+
+/*footer {
+  position: relative;
+  display: block;
+  height: 300px;
+  width: 100%;
+  background: #000 url("../images/CV-RulesCover.img") no-repeat center top;
+  background-size: cover;
+}*/
+
+.footerbar{
+  display: block;
+  background-color: #432d64;
+  color: #FFF;
+  padding: 10px;
+  font-family: 'Abel', sans-serif;
+  text-align: center;
+}
+
+
+
+
+/*RESPONSIVE QUERY*/
+
+@media screen and (min-width: 37.5em){
+  .yearbookphoto{
+    width: 50%;
+    height: auto; 
+  }
+  .charchunk,
+  .mapchunk{
+    float: left;
+    width: 50%;
+  }
+  .chartext{
+    width: 90%;
+    padding: 0px 20px;
+  }
+  .mapchunk{
+    float: right;
+    padding-top: 0px;
+  }
+  .map{
+    width: 50%;
+    position: relative;
+  }
+  .ruleschunk{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -100px;
+    padding-bottom: 40px;
+
+  }
+  .charchunk{
+    padding-top: 100px;
+  }
+}
+
+@media screen and (min-width: 60em) and (min-height: 600px){
+  body{
+    font-size: 25px;
+  }
+}
